@@ -1,0 +1,93 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BASE THEME
+========================= */
+
+body {
+  background-color: #000;
+  color: #ffffff;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont;
+  line-height: 1.6;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.center {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  text-align: center;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+h1, h2, h3 {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+p, li, pre {
+  color: #e5e7eb; /* soft white */
+}
+
+/* =========================
+   INTERACTIVE ELEMENTS
+========================= */
+
+input {
+  background: transparent;
+  border: 1px solid #3b82f6;
+  color: #ffffff;
+  padding: 10px 14px;
+  width: 260px;
+  outline: none;
+}
+
+input::placeholder {
+  color: #93c5fd;
+}
+
+button {
+  background: transparent;
+  border: 1px solid #3b82f6;
+  color: #3b82f6;
+  padding: 12px 22px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #3b82f6;
+  color: #000;
+}
+
+/* =========================
+   CODE / PRE
+========================= */
+
+pre {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  padding: 16px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 14px;
+  max-width: 600px;
+  overflow-x: auto;
+}
