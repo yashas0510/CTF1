@@ -4,7 +4,6 @@ export default function InspectOnce() {
   const [visible, setVisible] = useState(true)
 
   useEffect(() => {
-    // DevTools are ALLOWED here by design
     const timer = setTimeout(() => setVisible(false), 2000)
     return () => clearTimeout(timer)
   }, [])
@@ -14,18 +13,18 @@ export default function InspectOnce() {
       <p>You know where to look.</p>
 
       {visible ? (
-        <div
-          dangerouslySetInnerHTML={{
-            __html: `
-<!--
-flag{dom_whisperer}
--->
-`
-          }}
-        />
+        <pre data-hint="ZmxhZ3tkb21fd2hpc3BlcmVyfQ==">
+          Inspect the DOM.
+        </pre>
       ) : (
-        <p style={{ marginTop: "20px" }}>You were too late.</p>
+        <p>You were too late.</p>
       )}
+
+      {/* 
+        This challenge rewards inspection over reaction.
+        The hint exists even after the screen forgets it.
+        ZmxhZ3tkb21fd2hpc3BlcmVyfQ==
+      */}
     </div>
   )
 }
