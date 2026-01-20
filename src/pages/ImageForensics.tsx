@@ -26,25 +26,25 @@ export default function ImageForensics() {
       >
         <div>
           <img
-            src="/images/evidence1.png"
-            alt="evidence 1"
+            src="https://res.cloudinary.com/dfoqpwkck/image/upload/v1768903749/img1_mhnyvf.png"
+            alt="img 1"
             width={280}
             style={{ border: "1px solid #3b82f6" }}
           />
           <p style={{ marginTop: "8px", color: "#93c5fd" }}>
-            evidence1.png
+            img1.png
           </p>
         </div>
 
         <div>
           <img
-            src="/images/evidence2.png"
-            alt="evidence 2"
+            src="https://res.cloudinary.com/dfoqpwkck/image/upload/v1768903749/img2_kl6ewz.jpg"
+            alt="img 2"
             width={280}
             style={{ border: "1px solid #3b82f6" }}
           />
           <p style={{ marginTop: "8px", color: "#93c5fd" }}>
-            evidence2.png
+            img2.png
           </p>
         </div>
       </div>
