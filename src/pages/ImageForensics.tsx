@@ -26,7 +26,7 @@ export default function ImageForensics() {
       >
         <div>
           <img
-            src="https://res.cloudinary.com/dfoqpwkck/image/upload/v1768903749/img1_mhnyvf.png"
+            src="https://res.cloudinary.com/dfoqpwkck/image/upload/v1768911935/img1_kpsoax.png"
             alt="img 1"
             width={280}
             height={280}
@@ -42,7 +42,7 @@ export default function ImageForensics() {
 
         <div>
           <img
-            src="https://res.cloudinary.com/dfoqpwkck/image/upload/v1768906340/img2_jzb3lh.jpg"
+            src="https://res.cloudinary.com/dfoqpwkck/image/upload/v1768911936/img2_xgcuiw.jpg"
             alt="img 2"
             width={280}
             height={280}
