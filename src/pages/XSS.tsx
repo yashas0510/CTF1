@@ -13,15 +13,24 @@ export default function XSS() {
   const handleSubmit = () => {
     setSubmitted(true)
 
-    // Required XSS vector: SVG onload execution
-    if (payload.toLowerCase().includes("<svg") && payload.toLowerCase().includes("onload")) {
+    const p = payload.toLowerCase()
+
+    // Medium-difficulty XSS requirement:
+    // - must inject an <img> tag
+    // - must use onerror
+    // - must execute javascript (alert / console / document)
+    if (
+      p.includes("<img") &&
+      p.includes("onerror") &&
+      (p.includes("alert") || p.includes("console") || p.includes("document"))
+    ) {
       setSolved(true)
     }
   }
 
   return (
     <div className="center">
-      <h2>XSS</h2>
+      <h2>NEXT CHALLENGE AWAITS</h2>
 
       <input
         placeholder="say the magical words"
@@ -33,7 +42,6 @@ export default function XSS() {
         Submit
       </button>
 
-      {/* Render user input only after submit */}
       {submitted && (
         <div
           style={{ marginTop: "20px" }}
