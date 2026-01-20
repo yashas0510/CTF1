@@ -19,12 +19,11 @@ export default function InspectOnce() {
       ) : (
         <p>You were too late.</p>
       )}
-
-      {/* 
-        This challenge rewards inspection over reaction.
+    console.log("This challenge rewards inspection over reaction.
         The hint exists even after the screen forgets it.
-        ZmxhZ3tkb21fd2hpc3BlcmVyfQ==
-      */}
+        ZmxhZ3tkb21fd2hpc3BlcmVyfQ==")
+     
+      
     </div>
   )
 }
