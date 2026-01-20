@@ -10,20 +10,27 @@ export default function InspectOnce() {
 
   return (
     <div className="center">
-      <p>You know where to look.</p>
-
       {visible ? (
-        <pre data-hint="ZmxhZ3tkb21fd2hpc3BlcmVyfQ==">
-          Inspect the DOM.
-        </pre>
+        <>
+          <p>You know where to look.</p>
+
+          {/* Inject REAL HTML comment into DOM */}
+          <div
+            dangerouslySetInnerHTML={{
+              __html: `
+<!--
+This will not stay long.
+The DOM remembers what the UI forgets.
+
+ZmxhZ3tkb21fd2hpc3BlcmVyfQ==
+-->
+`
+            }}
+          />
+        </>
       ) : (
         <p>You were too late.</p>
       )}
-    console.log("This challenge rewards inspection over reaction.
-        The hint exists even after the screen forgets it.
-        ZmxhZ3tkb21fd2hpc3BlcmVyfQ==")
-     
-      
     </div>
   )
 }
