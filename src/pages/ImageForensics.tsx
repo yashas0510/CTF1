@@ -29,7 +29,11 @@ export default function ImageForensics() {
             src="https://res.cloudinary.com/dfoqpwkck/image/upload/v1768903749/img1_mhnyvf.png"
             alt="img 1"
             width={280}
-            style={{ border: "1px solid #3b82f6" }}
+            height={280}
+            style={{
+              border: "1px solid #3b82f6",
+              objectFit: "cover"
+            }}
           />
           <p style={{ marginTop: "8px", color: "#93c5fd" }}>
             img1.png
@@ -41,7 +45,11 @@ export default function ImageForensics() {
             src="https://res.cloudinary.com/dfoqpwkck/image/upload/v1768903749/img2_kl6ewz.jpg"
             alt="img 2"
             width={280}
-            style={{ border: "1px solid #3b82f6" }}
+            height={280}
+            style={{
+              border: "1px solid #3b82f6",
+              objectFit: "cover"
+            }}
           />
           <p style={{ marginTop: "8px", color: "#93c5fd" }}>
             img2.png
