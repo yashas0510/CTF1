@@ -42,7 +42,7 @@ export default function ImageForensics() {
 
         <div>
           <img
-            src="https://res.cloudinary.com/dfoqpwkck/image/upload/v1768905187/img2_qymz6c.png"
+            src="https://res.cloudinary.com/dfoqpwkck/image/upload/v1768906340/img2_jzb3lh.jpg"
             alt="img 2"
             width={280}
             height={280}
@@ -52,7 +52,7 @@ export default function ImageForensics() {
             }}
           />
           <p style={{ marginTop: "8px", color: "#93c5fd" }}>
-            img2.png
+            img2.jpg
           </p>
         </div>
       </div>
