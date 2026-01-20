@@ -42,7 +42,7 @@ export default function ImageForensics() {
 
         <div>
           <img
-            src="https://res.cloudinary.com/dfoqpwkck/image/upload/v1768903749/img2_kl6ewz.jpg"
+            src="https://res.cloudinary.com/dfoqpwkck/image/upload/v1768905187/img2_qymz6c.png"
             alt="img 2"
             width={280}
             height={280}
