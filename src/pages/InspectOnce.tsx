@@ -4,33 +4,28 @@ export default function InspectOnce() {
   const [visible, setVisible] = useState(true)
 
   useEffect(() => {
-    const timer = setTimeout(() => setVisible(false), 2000)
+    const timer = setTimeout(() => setVisible(false), 5000) // ⏱ 5 seconds
     return () => clearTimeout(timer)
   }, [])
 
   return (
     <div className="center">
-      {visible ? (
-        <>
-          <p>You know where to look.</p>
+      <p>You know where to look.</p>
 
-          {/* Inject REAL HTML comment into DOM */}
-          <div
-            dangerouslySetInnerHTML={{
-              __html: `
+      {/* HTML comment is injected ONCE and NEVER removed */}
+      <div
+        dangerouslySetInnerHTML={{
+          __html: `
 <!--
-This will not stay long.
-The DOM remembers what the UI forgets.
+Time fades. Source remains.
 
 ZmxhZ3tkb21fd2hpc3BlcmVyfQ==
 -->
 `
-            }}
-          />
-        </>
-      ) : (
-        <p>You were too late.</p>
-      )}
+        }}
+      />
+
+      {!visible && <p>You were too late.</p>}
     </div>
   )
 }
