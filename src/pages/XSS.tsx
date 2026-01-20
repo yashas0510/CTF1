@@ -51,7 +51,7 @@ export default function XSS() {
 
       {solved && (
         <pre style={{ marginTop: "20px" }}>
-{`flag{xss_is_not_a_bug_its_a_feature}`}
+{`/flag{xss_gate_opened}`}
         </pre>
       )}
     </div>
