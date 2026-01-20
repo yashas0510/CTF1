@@ -64,7 +64,7 @@ export default function Router() {
 
       {/* 9️⃣ Whitespace – FINAL */}
       <Route
-        path="/flag{spaces_speak}"
+        path="/flag{all_set}"
         element={<Base64 />}
       />
 
