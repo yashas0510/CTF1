@@ -35,37 +35,37 @@ export default function Router() {
       {/* 4️⃣ Base64 / DOM */}
       <Route
         path="/flag{dom_whisperer}"
-        element={<Base64 />}
+        element={<ImageForensics />}
       />
 
       {/* 5️⃣ Image forensics */}
       <Route
         path="/flag{pixels_dont_lie}"
-        element={<ImageForensics />}
+        element={<XSS />}
       />
 
       {/* 6️⃣ XSS */}
       <Route
         path="/flag{xss_gate_opened}"
-        element={<XSS />}
+        element={<LFI />}
       />
 
       {/* 7️⃣ LFI */}
       <Route
         path="/flag{relative_truths}"
-        element={<LFI />}
+        element={<Crypto />}
       />
 
       {/* 8️⃣ Cryptography */}
       <Route
         path="/flag{crypto_is_layered}"
-        element={<Crypto />}
+        element={<Whitespace />}
       />
 
       {/* 9️⃣ Whitespace – FINAL */}
       <Route
         path="/flag{spaces_speak}"
-        element={<Whitespace />}
+        element={<Base64 />}
       />
 
     </Routes>

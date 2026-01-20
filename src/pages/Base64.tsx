@@ -8,13 +8,13 @@ export default function Base64() {
 
   return (
     <div className="center">
-      <p>You know where to look.</p>
+      <h2>Progress Checkpoint</h2>
 
-      {/* ZmxhZ3twaXhlbHNfZG9udF9saWV9 */}
+      <p>All challenges completed successfully.</p>
 
-      <pre data-hidden="ZmxhZ3twaXhlbHNfZG9udF9saWV9">
-        const answer = "not this"
-      </pre>
+      
+
+      <p>Proceed forward.</p>
     </div>
   )
 }
