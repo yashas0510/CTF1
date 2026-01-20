@@ -52,13 +52,13 @@ export default function Router() {
 
       {/* 7️⃣ LFI */}
       <Route
-        path="/flag{relative_truths}"
+        path="/flag{crypto_is_layered}"
         element={<Crypto />}
       />
 
       {/* 8️⃣ Cryptography */}
       <Route
-        path="/flag{crypto_is_layered}"
+        path="/flag{spaces_speak}"
         element={<Whitespace />}
       />
 
