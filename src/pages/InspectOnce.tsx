@@ -1,21 +1,30 @@
 import { useEffect, useState } from "react"
-import { disableDevTools } from "../utils/disableDevTools"
 
 export default function InspectOnce() {
   const [visible, setVisible] = useState(true)
 
   useEffect(() => {
-    disableDevTools()
+    // DevTools are ALLOWED here by design
     const timer = setTimeout(() => setVisible(false), 2000)
     return () => clearTimeout(timer)
   }, [])
 
   return (
     <div className="center">
+      <p>You know where to look.</p>
+
       {visible ? (
-        <pre>flag{"{dom_whisperer}"}</pre>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: `
+<!--
+flag{dom_whisperer}
+-->
+`
+          }}
+        />
       ) : (
-        <p>You were too late.</p>
+        <p style={{ marginTop: "20px" }}>You were too late.</p>
       )}
     </div>
   )
