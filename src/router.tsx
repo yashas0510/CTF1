@@ -58,7 +58,7 @@ export default function Router() {
 
       {/* 8️⃣ Cryptography */}
       <Route
-        path="/flag{spaces_speak}"
+        path="/flag{spaces_talk_worth}"
         element={<Whitespace />}
       />
 
