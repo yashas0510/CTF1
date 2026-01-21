@@ -26,8 +26,8 @@ export default function Crypto() {
       <img
         src="https://res.cloudinary.com/dfoqpwkck/image/upload/v1768997927/crypto_egn7wl.png" 
         alt="Cipher Wheel"
-        width={320}
-        height={320}
+        width={520}
+        height={520}
         style={{
           border: "1px solid #3b82f6",
           marginBottom: "20px",
