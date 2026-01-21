@@ -24,7 +24,7 @@ export default function Crypto() {
 
       {/* Cipher image */}
       <img
-        src="https://res.cloudinary.com/dfoqpwkck/image/upload/v1768997927/crypto_egn7wl.png" 
+        src="https://res.cloudinary.com/dfoqpwkck/image/upload/v1768998452/crypto_mstlwq.png" 
         alt="Cipher Wheel"
         width={520}
         height={520}
@@ -36,7 +36,7 @@ export default function Crypto() {
       />
 
       <input
-        placeholder="enter the decoded flag"
+        placeholder="Enter valid flag"
         value={answer}
         onChange={e => setAnswer(e.target.value)}
       />
