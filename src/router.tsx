@@ -64,7 +64,7 @@ export default function Router() {
 
       {/* 9️⃣ Whitespace – FINAL */}
       <Route
-        path="/flag{all_set}"
+        path="/flag{invisible_data_leak}"
         element={<Base64 />}
       />
 
