@@ -10,17 +10,20 @@ export default function Whitespace() {
       </p>
 
       <a
-        href="/clown.txt"   // ← YOU will put the link here later
+        href="/clown.txt"
         download
         style={{
           marginTop: "24px",
           display: "inline-block",
+          padding: "10px 18px",
+          border: "1px solid #3b82f6",
+          borderRadius: "6px",
           color: "#93c5fd",
-          textDecoration: "underline",
+          textDecoration: "none",
           cursor: "pointer"
         }}
       >
-        
+        Download case notes
       </a>
 
       <p style={{ marginTop: "20px", opacity: 0.75 }}>
