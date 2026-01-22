@@ -10,7 +10,7 @@ export default function Whitespace() {
       </p>
 
       <a
-        href="https://res.cloudinary.com/dfoqpwkck/raw/upload/v1769086265/clown_fhq1zy.txt"   // ← YOU will put the link here later
+        href="/clown.txt"   // ← YOU will put the link here later
         download
         style={{
           marginTop: "24px",
