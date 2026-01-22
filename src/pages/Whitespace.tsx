@@ -28,6 +28,7 @@ export default function Whitespace() {
 
       <p style={{ marginTop: "20px", opacity: 0.75 }}>
         Not everything you read is meant to be trusted.
+        You Reached the End.
       </p>
     </div>
   )
