@@ -1,43 +1,13 @@
+import { useEffect } from "react"
+import { disableDevTools } from "../utils/disableDevTools"
+
 export default function Whitespace() {
-  /*
-    Encoding scheme:
-    U+200B (Zero Width Space) = 0
-    U+200C (Zero Width Non-Joiner) = 1
+  useEffect(() => {
+    disableDevTools()
+  }, [])
 
-    Binary for "ALL_SET":
-    A  01000001
-    L  01001100
-    L  01001100
-    _  01011111
-    S  01010011
-    E  01000101
-    T  01010100
-  */
-
-  const hidden = (
-    "Inspired\u200C\u200B\u200B\u200B\u200B\u200B\u200B\u200C\u200B " +
-    "by\u200B\u200C\u200B\u200B\u200C\u200C\u200B\u200B " +
-    "fairytale\u200B\u200C\u200B\u200B\u200C\u200C\u200B\u200B " +
-    "trolls,\u200B\u200C\u200B\u200B\u200C\u200C\u200B\u200B " +
-    "King\u200B\u200C\u200B\u200B\u200C\u200C\u200B\u200B " +
-    "conceived\u200B\u200C\u200B\u200B\u200C\u200C\u200B\u200B " +
-    "of\u200B\u200C\u200B\u200B\u200C\u200C\u200B\u200B " +
-    "a\u200B\u200C\u200B\u200B\u200C\u200C\u200B\u200B " +
-    "shapeshifting\u200B\u200C\u200B\u200B\u200C\u200C\u200B\u200B " +
-    "entity\u200B\u200C\u200B\u200B\u200C\u200C\u200B\u200B " +
-    "living\u200B\u200C\u200B\u200B\u200C\u200C\u200B\u200B " +
-    "in\u200B\u200C\u200B\u200B\u200C\u200C\u200B\u200B " +
-    "the\u200B\u200C\u200B\u200B\u200C\u200C\u200B\u200B " +
-    "sewers\u200B\u200C\u200B\u200B\u200C\u200C\u200B\u200B " +
-    "that\u200B\u200C\u200B\u200B\u200C\u200C\u200B\u200B " +
-    "could\u200B\u200C\u200B\u200B\u200C\u200C\u200B\u200B " +
-    "embody\u200B\u200C\u200B\u200B\u200C\u200C\u200B\u200B " +
-    "whatever\u200B\u200C\u200B\u200B\u200C\u200C\u200B\u200B " +
-    "frightened\u200B\u200C\u200B\u200B\u200C\u200C\u200B\u200B " +
-    "its\u200B\u200C\u200B\u200B\u200C\u200C\u200B\u200B " +
-    "target\u200B\u200C\u200B\u200B\u200C\u200C\u200B\u200B " +
-    "most."
-  )
+  const hidden =
+    "Inspired by fairytale trolls, King conceived of a shapeshifting entity living in the sewers that could embody whatever frightened its target most."
 
   return (
     <div className="center">
