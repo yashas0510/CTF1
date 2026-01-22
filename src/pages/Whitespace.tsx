@@ -23,7 +23,7 @@ export default function Whitespace() {
           cursor: "pointer"
         }}
       >
-        Download case notes
+        Download 
       </a>
 
       <p style={{ marginTop: "20px", opacity: 0.75 }}>
